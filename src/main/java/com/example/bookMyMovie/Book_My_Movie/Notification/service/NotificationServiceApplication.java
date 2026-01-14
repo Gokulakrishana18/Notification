@@ -18,8 +18,4 @@ public class NotificationServiceApplication {
 		SpringApplication.run(NotificationServiceApplication.class, args);
 	}
 
-	@EventListener(ApplicationReadyEvent.class)
-	public void sendingMail(){
-		emailService.sendBookingConfirmation("gokulrajender@gmail.com","Boooking ID :123456");
-	}
 }
